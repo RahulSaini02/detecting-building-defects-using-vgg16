@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .header {
+    @apply text-2xl sm:text-3xl lg:text-5xl text-[#011638] font-medium;
+  }
+  .sub-header {
+    @apply text-[#343A40] font-semibold uppercase text-base sm:text-lg lg:text-xl tracking-widest;
+  }
+  .sub-header-1 {
+    @apply text-[#001233] font-semibold uppercase text-sm sm:text-base lg:text-lg tracking-widest;
+  }
+  .defect-header {
+    @apply text-center mt-5 sm:flex sm:flex-col sm:text-left;
+  }
+
+  .para {
+    @apply text-[#495057] tracking-wider text-sm sm:text-base lg:text-lg leading-6;
+  }
+
+  .cta-solid {
+    @apply text-white text-center uppercase cursor-pointer font-normal text-sm sm:text-base lg:text-lg bg-[#011638] hover:bg-[#012255] px-7 py-2 rounded-md focus-within:outline-none;
+  }
+  .cta-outlined {
+    @apply text-[#011638] text-center uppercase cursor-pointer font-normal text-sm sm:text-base lg:text-lg bg-white px-7 py-2 rounded-md border-2 border-[#011638] focus-within:outline-none transform transition-all duration-150 ease-in hover:text-white hover:bg-[#011638];
+  }
+  .cta-result {
+    @apply text-white text-center uppercase cursor-pointer font-normal text-sm sm:text-base lg:text-lg px-7 py-2 rounded-md bg-green-500 hover:bg-green-600 focus-within:outline-none;
+  }
+
+  .margin {
+    @apply mx-5 xl:mx-16 2xl:mx-52;
+  }
+  .tech {
+    @apply text-base sm:text-lg text-[#6C757D] uppercase tracking-widest font-medium p-2;
+  }
+  .contain {
+    @apply mx-5 xl:mx-16 2xl:mx-52 py-5 sm:py-20;
+  }
+  .defect {
+    @apply flex flex-col-reverse my-8 items-center justify-around;
+  }
+
+  .off {
+    @apply bg-gray-100 text-gray-400 disabled:opacity-100;
+  }
+}
