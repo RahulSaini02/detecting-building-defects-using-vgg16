@@ -7,7 +7,7 @@ function Nav() {
   if (route.pathname == "/") home = true;
 
   return (
-    <div className="sticky top-0 z-50 h-[10vh] bg-white flex items-center justify-between p-2 lg:px-5 shadow-md">
+    <div className="sticky top-0 z-50 h-[9vh] bg-white flex items-center justify-between p-2 lg:px-5 shadow-md sm:h-[10vh]">
       <Link href="/">
         <div className="cursor-pointer text-xl tracking-wide sm:text-2xl lg:text-3xl font-semibold text-[#011638] pl-5 xl:pl-10 2xl:pl-52">
           BDD

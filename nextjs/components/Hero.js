@@ -3,8 +3,8 @@ import Link from "next/link";
 
 function Hero() {
   return (
-    <div className="contain sm:flex sm:justify-evenly sm:items-center">
-      <div className="items-start flex flex-col justify-evenly sm:h-[80%] sm:w-[60%] sm:align-center">
+    <div className="contain justify-between sm:flex sm:justify-between sm:items-center">
+      <div className="mb-5 items-start flex flex-col justify-evenly sm:h-[90%] sm:w-[60%] sm:align-center">
         <h1 className="header p-5">
           Detect Defetcs
           <br />
@@ -19,7 +19,7 @@ function Hero() {
           <button className="cta-solid mx-5">GET STARTED</button>
         </Link>
       </div>
-      <div className="h-[50%] w-[100%]">
+      <div className="h-[50%] w-[100%] sm:h-[60%] sm:mt-5">
         <Image
           className="object-cover rounded-xl"
           src="/Hero.png"
